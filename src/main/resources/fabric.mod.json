@@ -1,36 +1,18 @@
 {
   "schemaVersion": 1,
   "id": "argon-client",
-  "version": "${version}",
   "name": "Argon Client",
-  "description": "Advanced utility addon for Meteor Client.",
-  "authors": [
-    "Argon"
-  ],
-  "contact": {
-    "sources": "https://github.com/Ry-ll/Argon-Client"
-  },
-  "icon": "assets/argon/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "com.nnpg.argon.ArgonAddon"
     ]
   },
   "mixins": [
     "argon.mixins.json"
   ],
-  "custom": {
-    "meteor-client:color": "120,200,255",
-    "modmenu": {
-      "parent": {
-        "id": "meteor-client"
-      }
-    }
-  },
   "depends": {
     "java": ">=17",
-    "minecraft": ["${mc_version}"],
     "meteor-client": "*"
   }
 }
